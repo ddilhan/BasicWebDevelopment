@@ -1,0 +1,72 @@
+body {
+  background: #6cf;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border: 1px solid #08038c;
+  box-shadow: 0 0 8px 3px #ffffff;
+}
+
+.questionContainer {
+  padding: 20px;
+  background: #08038c;
+  border-radius: 20px;
+  margin: 10px 0 10px 0;
+  color: #f6f6f6;
+}
+
+.questionContainer h2 {
+  margin: unset;
+}
+
+.option {
+  width: 80%;
+  display: inline-block;
+  padding: 10px 0 10px 15px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 10px 0 10px 10px;
+  color: #000000;
+  border-radius: 20px;
+}
+
+.option:hover {
+  background: #08038c;
+  color: #f6f6f6;
+}
+
+input[type="radio"] {
+  visibility: hidden;
+}
+
+.active.option {
+  background: cadetblue;
+}
+
+.btnSubmit {
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.5);
+  width: 100px;
+  height: 35px;
+  cursor: pointer;
+  float: right;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.resultsContainer {
+  height: 100px;
+  text-align: center;
+  font-size: 75px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Learning</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="myForm">
+        <h1>MEASURE YOUR ENGLISH KNOWLEDGE</h1>
+
+        <div class="questionContainer">
+          <h2 id="question"></h2>
+        </div>
+
+        <div>
+          <label class="option" id="op1" for="input1" onclick="setActive(this);"
+            ><input type="radio" name="option" value="1" id="input1" /><span
+              id="answerOne"
+            ></span
+          ></label>
+          <label class="option" id="op2" for="input2" onclick="setActive(this);"
+            ><input type="radio" name="option" value="2" id="input2" /><span
+              id="answerTwo"
+            ></span
+          ></label>
+          <label class="option" id="op3" for="input3" onclick="setActive(this);"
+            ><input type="radio" name="option" value="3" id="input3" /><span
+              id="answerThree"
+            ></span
+          ></label>
+          <label class="option" id="op4" for="input4" onclick="setActive(this);"
+            ><input type="radio" name="option" value="4" id="input4" /><span
+              id="answerFour"
+            ></span
+          ></label>
+        </div>
+        <div class="submitContainer">
+          <button type="button" id="submitButton" class="btnSubmit">
+            Next Question
+          </button>
+        </div>
+      </form>
+      <div class="resultsContainer" id="result" style="display: none"></div>
+    </div>
+    <script src="Questions.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
